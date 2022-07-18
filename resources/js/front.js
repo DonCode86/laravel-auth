@@ -1,3 +1,4 @@
+// @ts-nocheck
 window.Vue = require("vue");
 
 import App from "./views/App.vue";
