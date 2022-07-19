@@ -24,11 +24,11 @@
         <tbody>
           @foreach ($posts as $post)
             <tr>
-              <td>{{$post->id}}</td>
-              <td>{{$post->title}}</td>
-              <td>{{$post->slug}}</td>
-              <td class="text-truncate" style="max-width: 150px">{{$post->content}}</td>
-              <td>
+              <td class="align-middle">{{$post->id}}</td>
+              <td class="align-middle">{{$post->title}}</td>
+              <td class="align-middle">{{$post->slug}}</td>
+              <td class="text-truncate align-middle" style="max-width: 150px">{{$post->content}}</td>
+              <td class="align-middle">
                   @if ($post->published)
                       <span class="badge badge-pill badge-success">Pubblicato</span>
                   @else
