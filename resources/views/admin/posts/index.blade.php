@@ -10,9 +10,9 @@
       <div class="mb-3">
         <a href="{{route('admin.posts.create')}}" class="btn btn-success">Crea un post</a>
       </div>
-      <table class="table table-striped">
-        <thead>
-          <tr>
+      <table class="table table-striped text-center">
+        <thead class="text-center">
+          <tr class="text-center">
             <th scope="col">#</th>
             <th scope="col">Titolo</th>
             <th scope="col">Slug</th>
@@ -36,7 +36,7 @@
                   @endif
               </td>
               <td>
-                  <a href="{{route('admin.posts.show', $post->id)}}" class="btn btn-primary">Visualizza</a>
+                  <a href="{{route('admin.posts.show', $post->id)}}" class="btn btn-primary m-2">Visualizza</a>
                   <a href="{{route('admin.posts.edit', $post->id)}}" class="btn btn-warning">Modifica</a>
                   <form action="{{route('admin.posts.destroy', $post->id)}}" method="POST">
                       @csrf
